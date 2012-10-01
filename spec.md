@@ -72,6 +72,7 @@ Features
 ### Bonus
 
 1. Store drafts in a git repo
+
 1. Allow referencing of drafts with
 
         --draft=name
