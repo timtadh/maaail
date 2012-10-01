@@ -75,7 +75,7 @@ Features
 1. Allow referencing of drafts with
 
     --draft=name
-    --draft=name@<git-commit-spec>
+    --draft=name@[git-commit-spec]
 
 1. Make the git repo human understandable
 
