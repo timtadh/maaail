@@ -10,10 +10,10 @@ Use Cases
 
 ### Example Usage (send basic email)
 
-    mymailer --to=tom@example.com \
-             --cc=joe@example.com \
-             --cc=ted@example.com \
-             --subject="Test Email"
+    maaail --to=tom@example.com \
+            --cc=joe@example.com \
+            --cc=ted@example.com \
+            --subject="Test Email"
 
 causes an editor session to start, when finished asks if you really want to send
 the email, if yes sends it. It automatically assumes (unless otherwise
@@ -23,18 +23,18 @@ configured) that you want to send a markdown email.  Otherwise, prompts to
 1. save draft
 1. discard
 
-it uses the cascading config files (install/path/mymailerrc, ~/.mymailerrc,
-`pwd`/mymailerrc) to configure stmp, from, replyto, drafts folder, formatting
+it uses the cascading config files (install/path/maaailrc, ~/.maaailrc,
+`pwd`/maaailrc) to configure stmp, from, replyto, drafts folder, formatting
 (eg. plain, markdown, rst, etc...), etc...
 
 ### Example Usage (send email with 2 attachments)
 
-    mymailer --to=tom@example.com \
-             --cc=joe@example.com \
-             --cc=ted@example.com \
-             --attach=./path/image.png \
-             --attach=./path/audio.mp3 \
-             --subject="Test Email"
+    maaail --to=tom@example.com \
+           --cc=joe@example.com \
+           --cc=ted@example.com \
+           --attach=./path/image.png \
+           --attach=./path/audio.mp3 \
+           --subject="Test Email"
 
 causes an editor session to start. It includes a pre-written example for
 including the images inline with whatever syntax you are using (markdown,
@@ -42,14 +42,14 @@ restructured text, etc...).
 
 ### Example Usage (override config file options)
 
-    mymailer --to=tom@example.com \
-             --cc=joe@example.com \
-             --cc=ted@example.com \
-             --format=plain \
-             --from=ed@example.com \
-             --reply-to=ed@home.com \
-             --body=./path/to/body.txt
-             --subject="Test Email"
+    maaail --to=tom@example.com \
+           --cc=joe@example.com \
+           --cc=ted@example.com \
+           --format=plain \
+           --from=ed@example.com \
+           --reply-to=ed@home.com \
+           --body=./path/to/body.txt \
+           --subject="Test Email"
 
 would ask for confirmation to send the email contained in body.txt
 
